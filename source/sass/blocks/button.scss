@@ -1,0 +1,37 @@
+.button {
+  color: $text-color-alt;
+  background-color: $primary-color3;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    background-color: $primary-color2;
+    color: $text-color-alt3;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+}

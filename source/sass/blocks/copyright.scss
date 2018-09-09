@@ -1,0 +1,44 @@
+.copyright {
+  background-color: $primary-color2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+  width: 280px;
+  height: 76px;
+  min-height: 76px;
+  font-size: 0;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    flex-shrink: 0;
+    width: 162px;
+    min-width: auto;
+    padding-top: 21px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.copyright__text {
+  color: $text-color-alt2;
+  font-family: "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+}
+
+.copyright:hover .copyright__logo,
+.copyright:active .copyright__logo {
+  fill: $primary-color3;
+}

@@ -1,0 +1,117 @@
+.page-header {
+  background-color: $primary-color1;
+  min-width: 320px;
+
+  @media screen and (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.page-header__wrapper {
+  @media screen and (min-width: $tablet-width) {
+    height: 100px;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 106px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 171px;
+  }
+}
+
+.page-header__logo-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0 -1px 0 0 rgba(230, 230, 230, 1);
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 173px;
+    height: 58px;
+    margin-right: 36px;
+    box-shadow: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    justify-content: flex-start;
+  }
+}
+
+
+.page-header__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-header {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav-toggle {
+  padding: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  border: none;
+  font-size: 0;
+  background: url("../img/icon-close.svg") no-repeat center;
+  z-index: -5;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav-toggle--open {
+  background: url("../img/icon-mobile-menu.svg") no-repeat center;
+}
+
+.page-header__nav-toggle--close {
+  background: url("../img/icon-close.svg") no-repeat center;
+}
+
+.page-header__nav-toggle--js-visible {
+  z-index: 1;
+}

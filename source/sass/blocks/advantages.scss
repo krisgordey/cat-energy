@@ -1,0 +1,231 @@
+.advantages {
+  background-color: $primary-color1;
+}
+
+.advantages__wrapper {
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 768px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 40px;
+    width: 1300px;
+    border-bottom: none;
+  }
+}
+
+.advantages__header {
+  color: $text-color-base;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 29px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+}
+
+.advantages__item {
+  list-style: none;
+  position: relative;
+  display: flex;
+  width: 280px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-grow: 0;
+    width: 228px;
+    min-height: 317px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 96px;
+
+    &::after {
+      content: "1";
+      display: block;
+      z-index: 1;
+      right: 0;
+      position: absolute;
+      color: $primary-color2;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 246px;
+    min-height: 302px;
+    margin-right: 0;
+  }
+}
+
+.advantages__item--leaf::after {
+  @media screen and (min-width: $tablet-width) {
+    content: "1";
+    right: -1px;
+    top: 7px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: 17px;
+  }
+}
+
+.advantages__item--powder::after {
+  @media screen and (min-width: $tablet-width) {
+    content: "2";
+    right: -17px;
+    top: 6px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.advantages__item--dining::after {
+  @media screen and (min-width: $tablet-width) {
+    content: "3";
+    right: -19px;
+    top: 6px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: -2px;
+  }
+}
+
+.advantages__item--clock::after {
+  @media screen and (min-width: $tablet-width) {
+    content: "4";
+    top: 6px;
+    right: -21px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: -4px;
+  }
+}
+
+.advantages__item-text {
+  color: $text-color-alt2;
+  font-family: "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    z-index: 2;
+    display: block;
+  }
+}
+
+.advantages__item--leaf::before {
+  content: "";
+  display: block;
+  background: url("../img/advantage-leaf@1x.png") no-repeat center $primary-color3;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+    margin-top: 45px;
+  }
+}
+
+.advantages__item--dining::before {
+  content: "";
+  display: block;
+  background: url("../img/advantage-dining@1x.png") no-repeat center $primary-color3;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+    margin-top: 45px;
+  }
+}
+
+.advantages__item--clock::before {
+  content: "";
+  display: block;
+  background: url("../img/advantage-clock@1x.png") no-repeat center $primary-color3;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+    margin-top: 45px;
+  }
+}
+
+.advantages__item--powder::before {
+  content: "";
+  display: block;
+  background: url("../img/advantage-powder@1x.png") no-repeat center $primary-color3;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+    margin-top: 45px;
+  }
+}

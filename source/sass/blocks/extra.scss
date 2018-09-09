@@ -1,0 +1,166 @@
+.extra {
+  background-color: $primary-color1;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 66%;
+    height: 3px;
+    background-color: $primary-color3;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 1;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 100%;
+      top: 52px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: 63px;
+    }
+  }
+}
+
+.extra__wrapper {
+  padding: 30px 20px;
+  padding-top: 27px;
+  padding-bottom: 35px;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 30px;
+    padding-bottom: 75px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 85px;
+    width: 1300px;
+  }
+}
+
+.extra__inner {
+  @media screen and (min-width: $desktop-width) {
+    width: 895px;
+    margin-right: auto;
+    margin-left: 41px;
+  }
+}
+
+.extra__header {
+  color: $text-color-base;
+  background-color: $primary-color1;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 33px;
+  padding-right: 22px;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 36px;
+    padding-left: 36px;
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 41px;
+    padding-left: 39px;
+    margin-bottom: 80px;
+  }
+}
+
+.extra__bonus {
+  min-height: 289px;
+  width: 280px;
+  background: url("../img/gift-photo-mobile@1x.jpg") $primary-color3 no-repeat center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  padding-top: 65px;
+  padding-bottom: 44px;
+  margin-top: 39px;
+
+  @media screen and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    background: url("../img/gift-photo-mobile@2x.jpg") $primary-color3 no-repeat;
+    background-size: 280px 289px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 200px;
+    flex-direction: row;
+    padding: 65px 90px;
+    margin-top: 66px;
+    background: url("../img/gift-photo-tablet@1x.jpg") $primary-color3 no-repeat center;
+
+    @media screen and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      background: url("../img/gift-photo-tablet@2x.jpg") $primary-color3 no-repeat center;
+      background-size: 708px 200px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 289px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 44px;
+    margin-top: 0;
+    margin-right: 40px;
+    background: url("../img/gift-photo-desktop@1x.jpg") $primary-color3 no-repeat center;
+
+    @media screen and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      background: url("../img/gift-photo-desktop@2x.jpg") $primary-color3 no-repeat center;
+      background-size: 245px 289px;
+    }
+  }
+}
+
+.extra__bonus::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  fill: $primary-color1;
+  padding-bottom: 65px;
+}
+
+.extra__bonus-text {
+  color: $text-color-alt;
+  font-family: "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  line-height: 19px;
+  width: 159px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    text-align: left;
+    margin-right: 35px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    text-align: center;
+  }
+}

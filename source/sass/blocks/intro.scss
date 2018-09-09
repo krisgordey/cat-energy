@@ -1,0 +1,166 @@
+.intro {
+  @media screen and (min-width: $tablet-width) {
+    min-height: 844px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 565px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: calc(50% - 40px);
+      height: 696px;
+      background: url("../img/index-background-desktop@1x.jpg") $primary-color3 no-repeat center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media screen and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      &::before {
+        background: url("../img/index-background-desktop@2x.jpg") $primary-color3 no-repeat center;
+        background-size: 680px auto;
+      }
+    }
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    width: 768px;
+    padding: 0 117px;
+    padding-top: 34px;
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1300px;
+    padding-top: 51px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.intro__content-wrapper {
+  min-height: 306px;
+  padding: 0 20px;
+  padding-top: 28px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    z-index: 1;
+    padding: 0;
+    background-image: none;
+    width: 420px;
+    min-height: auto;
+  }
+}
+
+.intro__header {
+  margin: 0 0 25px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $text-color-alt;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    color: $text-color-base;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 41px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+
+.intro__slogan {
+  margin: 29px auto;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $text-color-alt;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    color: $text-color-base;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.intro__logo {
+  width: 280px;
+  height: 273px;
+  margin: 0 auto;
+  margin-top: -139px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    top: 374px;
+    left: 29px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 110px;
+    left: 489px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.intro__button {
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+    z-index: 1;
+    width: 245px;
+    height: 52px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 15px 15px;
+  }
+}
